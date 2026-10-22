@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <meta name="description" content="Emirhan Özdemir'in kişisel web sayfası">
+  <title>Emirhan Özdemir | Kişisel Web Sayfası</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <header class="cover">
+      <span>Kişisel Web Sayfam</span>
+    </header>
+
+    <section class="profile" aria-labelledby="name">
+      <img class="avatar" src="photo.jpeg" alt="Emirhan Özdemir">
+      <p class="eyebrow">Kişisel Bilgilerim</p>
+      <h1 id="name">Emirhan Özdemir</h1>
+      <p class="role">Öğrenci / Yazılım Geliştirme</p>
+
+      <article class="bio">
+        <h2>Hakkımda</h2>
+        <p>Merhaba! Ben Emirhan Özdemir. Mehmet Akif Ersoy Üniversitesi Ağlasun Meslek Yüksekokulunda yazılım geliştirme alanında eğitim alıyorum. Yeni teknolojileri öğrenmek ve bunları projelerime uygulamak beni motive ediyor.</p>
+      </article>
+
+      <section class="details" aria-labelledby="education-heading">
+        <h2 id="education-heading">Eğitim Bilgilerim</h2>
+        <table>
+          <caption>Eğitim bilgilerim</caption>
+          <tbody>
+            <tr>
+              <th scope="row">Üniversite</th>
+              <td>Mehmet Akif Ersoy Üniversitesi</td>
+            </tr>
+            <tr>
+              <th scope="row">Okul</th>
+              <td>Ağlasun Meslek Yüksekokulu</td>
+            </tr>
+            <tr>
+              <th scope="row">Alan</th>
+              <td>Yazılım Geliştirme</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">İletişim</h2>
+        <form action="mailto:ornek@email.com" method="post" enctype="text/plain">
+          <label for="sender-name">Adınız</label>
+          <input id="sender-name" name="Ad" type="text" required>
+
+          <label for="sender-email">E-posta adresiniz</label>
+          <input id="sender-email" name="E-posta" type="email" required>
+
+          <label for="subject">Konu</label>
+          <select id="subject" name="Konu">
+            <option value="Genel">Genel</option>
+            <option value="İş birliği">İş birliği</option>
+            <option value="Proje">Proje</option>
+          </select>
+
+          <label for="message">Mesajınız</label>
+          <textarea id="message" name="Mesaj" rows="4" required></textarea>
+
+          <button class="button button-primary" type="submit">Formu gönder</button>
+        </form>
+      </section>
+
+      <a class="button button-secondary email-button" href="mailto:ornek@email.com">
+        E-posta gönder
+      </a>
+
+      <div class="divider"></div>
+      <p class="section-label">Beni takip edin</p>
+      <nav class="socials" aria-label="Sosyal medya bağlantıları">
+        <a class="social-link" href="https://www.linkedin.com/in/emirhan-özdemir-76573b442?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a class="social-link" href="https://www.instagram.com/iamzdmr" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </nav>
+    </section>
+
+    <footer class="footer">Yeni bağlantılar ve iş birlikleri için her zaman ulaşabilirsiniz.</footer>
+  </main>
+</body>
+</html>
